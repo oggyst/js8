@@ -53,9 +53,9 @@ function run(max, min) {
         document.write('<td>' + arrColumnNumbers[0] + '</td>');
         document.write ('</tr>');
         counter=0;
-        for(var j=0;j<intNumberOfRows; j++)
+        for(var j=0;j<intNumberOfColumns; j++)
         {
-            for (var i=1; i<=intNumberOfColumns;i++)
+            for (var i=1; i<=intNumberOfRows;i++)
             {
                 if(doOnce)
                 {
@@ -63,7 +63,7 @@ function run(max, min) {
                     counter++;
                     doOnce = false;
                 }
-                if (i == intNumberOfColumns)
+                if (i == intNumberOfRows)
                 {
                  document.write('<td>' + arrayTemp[j] + '</td>');
                 } else {
